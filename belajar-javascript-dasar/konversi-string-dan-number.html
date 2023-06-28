@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+<script>
+
+    const value_1 = "1";
+    const value_2 = 1;
+    const sum_ = value_1 + value_2;
+    document.writeln(`<p>${sum_}</p>`)
+
+    const value1 = parseInt("1");
+    const value2 = 1;
+    const sum = value1 + value2;
+
+    document.writeln(`<p>${sum}</p>`)
+    document.writeln("<br>")
+
+    document.writeln(`<p>${parseInt("1.0")}</p>`)
+    document.writeln(`<p>${parseInt("1.2")}</p>`)
+    document.writeln(`<p>${parseInt("1.9")}</p>`)
+
+    document.writeln("<br>")
+
+    document.writeln(`<p>${parseFloat("3")}</p>`)
+    document.writeln(`<p>${parseFloat("1.0")}</p>`)
+    document.writeln(`<p>${parseFloat("1.1")}</p>`)
+    document.writeln(`<p>${parseFloat("1.9")}</p>`)
+
+    document.writeln("<br>")
+    
+    document.writeln(`<p>${Number("3")}</p>`)
+    document.writeln(`<p>${Number("1.0")}</p>`)
+    document.writeln(`<p>${Number("1.1")}</p>`)
+    document.writeln(`<p>${Number("1.9")}</p>`)
+
+    document.writeln("<br>")
+
+    const a = 1;
+    const b = 1;
+    const total = a.toString() + b.toString();
+    document.writeln(`<p>${total}</p>`);
+    document.writeln("<br>")
+
+    document.writeln(`<p>${parseInt("salah")}</p>`)  //NaN
+    document.writeln(`<p>${parseFloat("salah")}</p>`)  //NaN
+    document.writeln(`<p>${parseInt("1salah")}</p>`)
+    document.writeln(`<p>${parseFloat("1.1eko")}</p>`)
+    document.writeln(`<p>${parseInt("salah1")}</p>`) //NaN
+    document.writeln(`<p>${parseFloat("eko1.1")}</p>`) //NaN
+
+    document.writeln("<br>")
+    document.writeln(`<p>${Number("salah")}</p>`)
+    document.writeln(`<p>${Number("salah1")}</p>`)
+    document.writeln(`<p>${Number("1salah")}</p>`)
+    document.writeln(`<p>${Number("1.1eko")}</p>`)
+
+    document.writeln("<br>")
+
+    const first = Number("salah"); // NaN
+    const totalNumber = first + 100;
+    document.writeln(`<p>${totalNumber}</p>`); //NaN
+
+    document.writeln("<br>")
+
+    document.writeln(`<p>${isNaN(first)}</p>`);
+    document.writeln(`<p>${isNaN(totalNumber)}</p>`);
+    document.writeln(`<p>${isNaN(100)}</p>`);
+    document.writeln(`<p>${isNaN(NaN)}</p>`);
+
+</script>
+</body>
+</html>
